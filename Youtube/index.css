@@ -1,0 +1,289 @@
+*{
+    font-family: "Gill Sans", sans-serif;
+}
+body{
+    padding-left: 0;
+    padding-right: 0;
+}
+#navbar{
+    width: 100%;
+    height: 60px;
+    border: 0px solid #000;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#c1{
+    width: 250px;
+    height: 60px;
+    border: 0px solid #000;
+    display: flex;
+}
+#c1ofc1{
+    width: 20%;
+    height: 100%;
+    border: 0px solid #000;
+}
+#c1ofc1:hover{
+  cursor: pointer;
+}
+#c1ofc2>h1{
+    margin-top: 6%;
+    letter-spacing:-3px;
+    font-family: "Gill Sans", sans-serif;
+}
+#logo{
+    color: red;
+}
+#c1ofc2{
+    width: 80%;
+    height: 100%;
+    border: 0px solid #000;
+    cursor: pointer;
+}
+#c2{
+    width: 40%;
+    height: 40px;
+    border: 0px solid gray;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+#c2>div{
+   background-color:#f2f2f2; 
+   border-radius: 45%;
+  
+    
+}
+#c2>div>h2{
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-right: 20px;
+    
+}
+#c3{
+    width: 200px;
+    height: 60px;
+    border: 0px solid #000;
+    display: flex;
+    justify-content: space-around;
+}
+#c3>div:hover{
+    cursor: pointer;
+}
+#c3>div:nth-child(3){
+    background-color:#f2f2f2; 
+    color: rgb(48, 47, 47);
+    width: 60px;
+    height: 40px;
+    
+    border-radius: 3px;
+    margin-top: 10px;
+    text-align: center;
+}
+#c3>div:nth-child(3):hover{
+    background-color:#d5d5d5; 
+    
+}
+#user>p{
+    margin-top: 12px;
+}
+
+#c3 h3{
+    margin-top: 10px;
+}
+#hidden{
+    width: 60px;
+    /* height: 300px; */
+    border: 0px solid #000;
+    display: inline-block;
+    display: none;
+
+}
+
+#hidden>div{
+    width: 60px;
+    /* height: 60px; */
+    border: 0px solid #000;
+}
+#hidden>div:hover{
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+#hidden>div>p{
+   margin-top:-25%;
+   font-size: 10px;
+   
+}
+
+#lhs{
+    width: 17%;
+    height: 665px;
+    border: 0px solid #000;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top:-670px;
+}
+
+#lhs>div>h2,#lhs>div>p{
+    margin-left: 8%;
+}
+#lhs>div>p{
+    margin-top: 23px;
+}
+#container{
+    width: 81%;
+    height: 610px;
+    border: 0px solid #000;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-left: 18%;
+
+}
+#mid{
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+    gap:-30px;
+    background-color: #f9f9f9;
+}
+#mid>div{
+    margin-left: 2%;
+    margin-top: 5%;
+}
+#container img{
+    width: 80%;
+    height: 50%;
+    cursor: pointer;
+}
+#top{
+    margin-top: 0%;
+    width: 82%;
+    margin-left: 18%;
+    padding-top: 1%;
+    padding-bottom: -0.5%;
+    height: 60px;
+    border: 1px solid rgb(212, 210, 210);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    border-left: none;
+    border-right: none;
+}
+
+.btn{
+    margin-left: 3%;
+    height: 40px;
+    border-radius: 18px;
+    cursor: pointer;
+    border-color: rgb(216, 209, 209);
+}
+.btn:hover{
+    background-color:#e1dddd; 
+}
+#searchButton{
+    width: 70px;
+}
+#input{
+    width: 100%;
+    
+}
+
+#lhs>div{
+    width: 100%;
+    height: 50px;
+    border: 0px solid #000;
+    display: flex;
+   
+}
+#lhs>div:hover{
+    cursor: pointer;
+    background-color: #f2f2f2; 
+}
+.red{
+    color: red;
+}
+
+#topRhs{
+    position: absolute;
+    width: 20%;
+    height: 720px;
+    border: 1px solid red;
+    margin-left: 69%;
+    margin-top: -7%;
+    margin-left: 56%;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: white;
+    display: none;
+}
+
+#topRhs>div{
+   
+    width: 100%;
+    height: 60px;
+    border: 1px solid green;
+   
+}
+
+
+
+@media all and (min-width:320px) and (max-width:767px){
+    #topRhs{
+        display: none;
+    }
+    #mid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #hidden{
+        display: none;
+    }
+    #lhs{
+      display: none;
+    }
+    #c3{
+        display: none;
+    }
+    #c2>div{
+       display: none;
+        
+    }
+    #c1ofc1{
+       display: none;
+    }
+    #top{
+    display: none;
+    }
+    #c2{
+        width: 200px;
+        margin-left: -40px;
+    }
+    
+}                                                                               
+
+@media all and (min-width:768px) and (max-width:1024px){
+    #mid{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+    }
+    #hidden{
+        display:none;
+    }
+    #lhs{
+        display: none;
+      }
+      #c3{
+       display: none;
+    }
+    #c2>div{
+        display: none;
+     }
+     #c1ofc1{
+       display: none;
+    }
+    #top{
+        display: none;
+        }
+    
+}                                 
