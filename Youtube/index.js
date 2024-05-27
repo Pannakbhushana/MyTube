@@ -77,7 +77,7 @@ function searchYourVideo(){
             let res=await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${search_term}&key=${apiKey}`);
             let data= await res.json();
             let actualData= data.items;
-            // console.log(actualData)
+            console.log(actualData)
             appendData(actualData);
         }
         catch(error){
@@ -185,104 +185,6 @@ let fetchData=[
         }
     },
     {
-        id: {
-            
-            "channelId": "UCcYzLCs3zrQIBVHYA1sK2sw"
-        },
-        snippet: {
-           
-            channelId: "UCcYzLCs3zrQIBVHYA1sK2sw",
-            title: "Sadhguru",
-            description: "Official YouTube Channel of Sadhguru Considered among India's 50 most influential people, Sadhguru is a yogi, mystic, ...",
-            thumbnails: {
-                
-                high: {
-                    url: "https://yt3.ggpht.com/jBfoRxDyDktypbBYYra8woH5YUM9C89E7bDEE2c6qcEjjbGDRXYJEJZd0oyBpMGalKk5Nz8F6Jo=s800-c-k-c0xffffffff-no-rj-mo"
-                }
-            },
-            channelTitle: "Sadhguru",
-            
-        }
-    },
-    {
-        kind: "youtube#searchResult",
-        etag: "dqAAYDrNSC-NqkcdGwpuiykGbWw",
-        id: {
-            kind: "youtube#video",
-            videoId: "w21K-0H1XWw"
-        },
-        snippet: {
-            publishedAt: "2022-10-20T07:04:32Z",
-            channelId: "UCpEhnqL0y41EpW2TvWAHD7Q",
-            title: "Edit Narayan&#39;s Musical Accident Makes Everybody Laugh! | The Kapil Sharma Show | Sat-Sun At 9:30 PM",
-            description: "Click here to Subscribe to the SET India Channel: http://www.youtube.com/setindia Har Sat-Sun 9:30 PM hogi hasi ki bauchar iss ...",
-            thumbnails: {
-                default: {
-                    url: "https://i.ytimg.com/vi/w21K-0H1XWw/default.jpg",
-                    width: 120,
-                    height: 90
-                },
-               
-                high: {
-                    url: "https://i.ytimg.com/vi/w21K-0H1XWw/hqdefault.jpg",
-                   
-                }
-            },
-            channelTitle: "SET India",
-            
-           
-        }
-    },
-    {
-        id: {
-            
-            videoId: "onp1eECP7Ao"
-        },
-        snippet: {
-            
-            channelId: "UCUKTrXf8KdGIVXudO3dqOWw",
-            title: "You Will Never Be LAZY AGAIN! DO THIS 4 Things Everyday - SADHGURU",
-            description: "Sadhguru: By tomorrow morning, nearly a hundred and fifty thousand people will die a natural death in the world. You have not ...",
-            thumbnails: {
-               
-                high: {
-                    url: "https://i.ytimg.com/vi/onp1eECP7Ao/hqdefault.jpg",
-                    width: 480,
-                    height: 360
-                }
-            },
-            channelTitle: "BEwithSADHGURU",
-           
-        }
-    },
-    {
-        kind: "youtube#searchResult",
-        etag: "-Y_UVg8NJKE00e7tQiRMrBnFbcI",
-        id: {
-            "kind": "youtube#video",
-            "videoId": "TrY_lZavJps"
-        },
-        snippet: {
-            
-            channelId: "UCpEhnqL0y41EpW2TvWAHD7Q",
-            title: "&quot;Khushi&quot; Has No &quot;Thikaana&quot; | The Kapil Sharma Show | Sat-Sun At 9:30 PM",
-            description: "Click here to Subscribe to the SET India Channel: http://www.youtube.com/setindia Har Sat-Sun 9:30 PM hogi hasi ki bauchar iss ...",
-            thumbnails: {
-                default: {
-                    url: "https://i.ytimg.com/vi/TrY_lZavJps/default.jpg",
-                   
-                },
-               
-                "high": {
-                    url: "https://i.ytimg.com/vi/TrY_lZavJps/hqdefault.jpg",
-                    
-                }
-            },
-            channelTitle: "SET India",
-            
-        }
-    },
-    {
         kind: "youtube#searchResult",
        
         id: {
@@ -302,27 +204,6 @@ let fetchData=[
             },
             channelTitle: "Kapil Sharma",
             
-        }
-    },
-    {
-        
-        id: {
-            
-            "channelId": "UCJ2KaH9TTjZdmKwwAFwwFkA"
-        },
-        snippet: {
-           
-            channelId: "UCJ2KaH9TTjZdmKwwAFwwFkA",
-            title: "Sadhguru Hindi",
-            description: "सद्‌गुरु का ऑफिशियल हिन्दी यू-ट्यूब चैनल इस चैनल में देखिए सद्‌गुरु ...",
-            thumbnails: {
-                
-                high: {
-                    url: "https://yt3.ggpht.com/cjNSAJxePwp_ZLXKP3PFtZE69p6Rr-sX5NouTK93GEnC64t0dIJkQ8l_aK_GSbbd8oU_gbuWtQ=s800-c-k-c0xffffffff-no-rj-mo"
-                }
-            },
-            channelTitle: "Sadhguru Hindi",
-           
         }
     },
     {
@@ -418,29 +299,7 @@ let fetchData=[
         }
         
     },
-    {
-        id: {
-            
-            videoId: "L_BKGAOsiCs"
-        },
-        snippet: {
-           
-            channelId: "UCANiRcgKtTKpUdfoarzh4qA",
-            title: "Sarileru Neekevvaru (2021) new dubbed movie in hindi /// fûll mövíé///ãction",
-            description: "Sarileru Neekevvaru (2021) new dubbed movie in hindi ‎",
-            thumbnails: {
-                
-                high: {
-                    url: "https://i.ytimg.com/vi/L_BKGAOsiCs/hqdefault.jpg",
-                   
-                }
-            },
-            channelTitle: "Jayash razz gaming",
-           
-        }
-    },
-    
-    
+
     {
         
         id: {
@@ -486,6 +345,46 @@ let fetchData=[
             
         }
     },
+
+    {
+       
+        id: {
+           
+            videoId: "lNmVxAvJ1Ow"
+        },
+        snippet: {
+           
+            channelId: "UC9Annk0YF34wiyDbgcOcYJA",
+            title: "KANGUVA 2024 | New South Indian Hindi Dubbed",
+            description: "KANGUVA 2024 | New South Indian Hindi Dubbed Full Movie | Latest Suriya Movie 2024 #southmovie2024 KANGUVA 2024 ...",
+            thumbnails: {
+               
+                high: {
+                    url: "https://i.ytimg.com/vi/lNmVxAvJ1Ow/hqdefault.jpg",
+                    
+                }
+            },
+            channelTitle: "Latest Cinemas",
+            
+        }
+    },
+    {
+        id: {
+            videoId: "sAzlWScHTc4"
+        },
+        snippet: { 
+            channelId: "UCq-Fj5jknLsUf-MWSy4_brA",
+            title: "Naacho Naacho (Full Video) RRR - NTR, Ram Charan | M M Kreem | SS Rajamouli | Vishal Mishra &amp; Rahul",
+            description: "Naacho Naacho - Full Video from #RRRMovie. An M. M. Kreem Musical. Sung by Vishal Mishra & Rahul Sipligunj.",
+            thumbnails: {
+                
+                high: {
+                    url: "https://i.ytimg.com/vi/sAzlWScHTc4/hqdefault.jpg",    
+                }
+            },
+            channelTitle: "T-Series",   
+        }
+    }
 ];
 
 appendData(fetchData)
